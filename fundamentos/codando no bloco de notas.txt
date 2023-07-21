@@ -1,0 +1,48 @@
+package application;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Program {
+public static void main(String[] args) {
+
+int anoFabricacao = 0;
+double valorVeiculo = 0;
+double porcentagemDesconto = 0;
+double valorDesconto = 0;
+double valorPagar = 0;
+
+int totalCarrosSemiNovos = 0;
+int totalCarros = 0;
+
+Scanner sc = new Scanner(System.in);
+
+char desejaRepetir = 's';
+
+while (desejaRepetir == 's') || desejaRepetir == 'S' {
+System.out.println("Digite o ano de fabricação do);
+anoFabricacao = sc.nextInt();
+System.out.println("Digite o valor do veículo");
+valorVeiculo = leitor.nextDouble();	
+
+if (anoFabricacao <= 2000) {
+porcentagemDesconto = 0.12;
+} else {
+porcentagemDesconto = 0.07;
+totalCarrosSemiNovos++;
+}
+totalCarros++;
+valorDesconto = valorVeiculo * porcentagemDesconto;
+valorPagar = valorVeiculo - valorDesconto;
+System.out.println("O valor do desconto foi de: " + valorDesconto);
+System.out.println("O valor que deve ser pago é: " + valorPagar);
+
+System.out.println("Deseja fazer mais cadastros? S - Sim / N - Não");
+desejaRepetir = sc.next().charAt(0);
+}
+System.out.println("Total de carros semi novos: " + totalCarrosSemiNovos++);
+System.out.println("Total de carros: " + totalCarros);
+
+}
+
+}

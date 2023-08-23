@@ -19,7 +19,7 @@ public class Program {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         System.out.print("Enter department's name: ");
-        String departmentName = sc.nextLine(); 
+        String departmentName = sc.nextLine();
 
         System.out.println("Enter worker data: ");
         System.out.print("Name: ");
@@ -57,7 +57,6 @@ public class Program {
         System.out.println("Department: " + worker.getDepartment().getName());
         System.out.println("Income for " + monthAndYear + ": " + String.format("%.2f", worker.income(year, month)));
         
-
         sc.close();
     }
 }

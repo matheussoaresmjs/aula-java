@@ -30,11 +30,12 @@ public class Program {
 
         System.out.println("Enter order data:");
         System.out.println("Status: ");
+        //* .valueOf() é para conversão  */
         OrderStatus status = OrderStatus.valueOf(sc.next());
-
+        //* New Date() instancia a hora e data atual do sistema */
         Order order = new Order(new Date(), status, client);
 
-        System.out.println("How many items to this order? ");
+        System.out.print("How many items to this order? ");
         int n = sc.nextInt();
 
         for (int i=1; i<=n; i++) {

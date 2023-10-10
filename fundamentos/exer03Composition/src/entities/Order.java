@@ -46,7 +46,7 @@ public class Order {
     public void setClient(Client client) {
         this.client = client;
     }
-
+    //* Remover isso aqui de baixo, getItems. Pra que o acesso da lista fique restrito aos metodos de "add" e "remove" */
     public List<OrderItem> getItems() {
         return items;
     }
@@ -67,6 +67,7 @@ public class Order {
         return sum;
     }
 
+    //* StringBuilder, consegue por várias string sem precisar concatena-las */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

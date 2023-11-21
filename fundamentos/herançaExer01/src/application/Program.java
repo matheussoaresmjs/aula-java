@@ -10,7 +10,7 @@ public class Program {
         Account acc = new Account(1001, "Alex", 0.0);
         BusinessAccount bacc = new BusinessAccount(1001, "Maria", 0.0, 500.0);
 
-        // UPCASTING
+        // UPCASTING - é uma forma de instanciar objetos com subclasses  diferentes porém mantendo uma superclasse em comum.
 
         Account acc1 = bacc;
         Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);

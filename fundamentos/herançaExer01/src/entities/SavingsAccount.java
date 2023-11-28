@@ -1,7 +1,5 @@
 package entities;
 
-import java.util.function.Supplier;
-
 public class SavingsAccount extends Account {
     
     private Double interestRate;

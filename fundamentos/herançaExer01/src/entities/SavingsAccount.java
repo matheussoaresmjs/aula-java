@@ -24,5 +24,14 @@ public class SavingsAccount extends Account {
     public void updateBalance() {
         balance += balance * interestRate;
     }
-    
+
+    /* @override serve pra fazer exceções/sobrescrição
+    No caso a cima, a hiperclasse Account, terá um desconto de saque de 5.
+    Enquanto na subclasse "conta poupança", esse saque não existirá
+     */
+    @Override
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+
 }

@@ -28,4 +28,14 @@ public class BusinessAccount extends Account {
 
         }
     }
+
+    /* @Override - com super(da superclasse)
+    Basicamente é uma sobreposição com adicional
+    Você sobrepões com o Override, chama o método com o Super, e faz mudanças adicionais(ou não) sobre o método chamado
+     */
+    @Override
+    public void withdraw(double amount) {
+        super.withdraw(amount);
+        balance -= 2.0;
+    }
 }

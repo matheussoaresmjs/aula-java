@@ -39,18 +39,29 @@ public class Program {
 
         // Exemplos utilizando a sobreEscrita do Override
 
-        Account acc10 = new Account(1001, "Alex", 1000.0);
+        Account acc10 = new Account(1001, "Bekka", 1000.0);
         acc10.withdraw(200.0);
         System.out.println(acc10.getBalance());
 
-        Account acc20 = new SavingsAccount(1002, "Maria", 1000.0, 0.01);
+        Account acc20 = new SavingsAccount(1002, "Nit", 1000.0, 0.01);
         acc20.withdraw(200.0);
         System.out.println(acc20.getBalance());
 
-        Account acc30 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
+        Account acc30 = new BusinessAccount(1003, "Taina", 1000.0, 500.0);
         acc30.withdraw(200.0);
         System.out.println(acc30.getBalance());
 
+        //* */
+
+        Account x = new Account(1020, "Bada", 1000.0);
+        Account y = new BusinessAccount(1023, "Becca", 1000.0, 0.01);
+
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
+        
 
     }
 }

@@ -50,6 +50,18 @@ public class Program {
         Account acc30 = new BusinessAccount(1003, "Taina", 1000.0, 500.0);
         acc30.withdraw(200.0);
         System.out.println(acc30.getBalance());
+
+        //* */
+
+        Account x = new Account(1020, "Bada", 1000.0);
+        Account y = new BusinessAccount(1023, "Becca", 1000.0, 0.01);
+
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
         
+
     }
 }
